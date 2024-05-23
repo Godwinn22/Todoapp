@@ -1,0 +1,48 @@
+{
+  "workout_data": [
+    {
+      "id": "db02",
+      "category": "Works",
+      "workout": "Go to work",
+      "description": "Yes yes yes",
+      "user_id": "5d23",
+      "createdAt": "2024-05-21T17:59:16.154Z",
+      "updatedAt": "2024-05-21T17:59:16.154Z"
+    },
+    {
+      "id": "d072",
+      "category": "ajbsdjv",
+      "workout": "bvuib",
+      "description": "jbvakb",
+      "user_id": "5d23",
+      "createdAt": "2024-05-21T18:12:52.439Z",
+      "updatedAt": "2024-05-21T18:12:52.439Z"
+    },
+    {
+      "id": "9f01",
+      "category": "julll",
+      "workout": "cndbnd",
+      "description": "ouhrr",
+      "user_id": "fd49",
+      "createdAt": "2024-05-21T18:13:18.760Z",
+      "updatedAt": "2024-05-21T18:13:18.760Z"
+    }
+  ],
+  "users": [
+    {
+      "id": "5d23",
+      "name": "panda_dev",
+      "email": "godwinohazulike@gmail.com",
+      "password": "1234",
+      "access": "no"
+    },
+    {
+      "id": "fd49",
+      "name": "hbhbh",
+      "email": "jbjb@gmail.com",
+      "password": "1234",
+      "access": "no"
+    }
+  ],
+  "admin": []
+}

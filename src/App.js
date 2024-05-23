@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import NotFound from "./pages/NotFound";
+import Home from "./pages/Home";
+import Form from "./components/Form";
+import LayoutIndex from "./layouts/LayoutIndex";
+import Register from "./pages/Register";
+import Login from "./pages/Login";
+import UpdateForm from "./components/UpdateForm";
+import LayoutAuth from "./layouts/LayoutAuth";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default function App() {
+    return (
+        <>
+            <BrowserRouter>
+                <Routes>
+                    <Route path="" element={<LayoutIndex />}>
+                        <Route path="/" element={<Home />} />
+                        <Route path="/create" element={<Form />} />
+                        <Route path="/workout/:id" element={<UpdateForm />} />
+                        <Route path="*" element={<NotFound />} />
+                    </Route>
+                    <Route path="" element={<LayoutAuth />}>
+                        <Route path="/register" element={<Register />} />
+                        <Route path="/login" element={<Login />} />
+                    </Route>
+                </Routes>
+            </BrowserRouter>
+        </>
+    );
 }
-
-export default App;
